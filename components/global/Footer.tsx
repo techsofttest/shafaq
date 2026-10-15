@@ -118,7 +118,7 @@ export default function Footer({contact,contact2,contact3,facility,service}:{con
               </span>
               <span><strong className="text-white font-semibold">Fax:</strong> <a href={`tel:${contact?.fax}`} className="hover:text-white transition-colors">{contact.fax}</a></span>
               <span className="mt-2"><strong className="text-white font-semibold">Email:</strong> <a href="mailto:info@shafaqgroup.com" className="hover:text-white transition-colors">{contact.email}</a></span>
-              <span><strong className="text-white font-semibold">Website:</strong> <a href={contact?.web} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{contact.web}</a></span>
+              <span><strong className="text-white font-semibold">Website:</strong> <a href={ contact?.web?.startsWith("http") ? contact?.web : `https://${contact?.web}`} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">{contact.web}</a></span>
             </li>
           </ul>
         </div>
