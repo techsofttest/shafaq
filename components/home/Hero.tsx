@@ -52,7 +52,7 @@ export default function Hero({hero}:{hero:any[]}) {
             >
               {/* Reduced subtitle from text-base/md:text-lg to text-sm/md:text-base */}
               <p className="text-white font-bold tracking-widest uppercase mb-3 text-sm md:text-base">
-                {slide.subtitle}
+                {slide.sub}
               </p>
 
               {/* Reduced title from 3.5rem/5rem to 2.75rem/4rem */}
