@@ -74,7 +74,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         </div>
               <GlobalCTA contact={data?.contact} />
               <SectionDivider topColor="#FE0002" bottomColor="#121212" />
-        <WhatsAppButton whatsapp={data?.contact.whatsapp} />
+        <WhatsAppButton whatsapp={data?.contact?.whatsapp} />
         <Footer contact={data?.contact} contact2={data?.contact2} contact3={data?.contact3} facility={data?.facility ?? []} service={data?.service?? []}  />
       </body>
     </html>

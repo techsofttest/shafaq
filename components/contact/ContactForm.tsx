@@ -328,7 +328,16 @@ useEffect(() => {
                       name="phone"
                       required
                       value={formData.phone}
-                      onChange={handleChange}
+                      inputMode="numeric"
+                      maxLength={10}
+                      onChange={(e) => {
+                        const value = e.target.value.replace(/\D/g, "");
+
+                        setFormData((prev) => ({
+                          ...prev,
+                          phone: value,
+                        }));
+                      }}
                       placeholder="e.g. +968 9000 0000"
                       autoComplete="tel"
                       className="w-full border border-gray-300 bg-white px-4 py-3.5 text-sm text-[#121212] outline-none transition-colors focus:border-[#FE0002]"
