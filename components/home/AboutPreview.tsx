@@ -62,7 +62,7 @@ export default function AboutPreview({page}:ProductResponse) {
           </div>
           <div className="lg:w-[50%] lg:pt-4">
             <div className="text-white text-lg mb-8 max-w-xl leading-relaxed" dangerouslySetInnerHTML={{__html:page?.content ?? ""}} />
-            <a href="#about-us" className="inline-block border border-white text-white px-8 py-3 hover:bg-white hover:text-black transition-colors uppercase text-base font-bold tracking-wider">Read Our Story</a>
+            <a href="/about" className="inline-block border border-white text-white px-8 py-3 hover:bg-white hover:text-black transition-colors uppercase text-base font-bold tracking-wider">Read Our Story</a>
           </div>
         </div>
 
