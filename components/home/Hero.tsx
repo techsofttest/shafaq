@@ -43,7 +43,7 @@ export default function Hero({hero}:{hero:any[]}) {
       <div className="w-full max-w-[1440px] mx-auto px-10 relative z-10">
         <div className="grid">
           {hero.map((slide, index) => (
-            <div
+             <div
               key={index}
               className={`col-start-1 row-start-1 max-w-[700px] pt-10 pb-16 transition-all duration-1000 ease-in-out ${index === currentIndex
                 ? 'opacity-100 translate-y-0 pointer-events-auto z-10'
