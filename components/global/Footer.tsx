@@ -59,7 +59,7 @@ export default function Footer({contact,contact2,contact3,facility,service}:{con
           <h3 className="text-lg font-bold mb-6 text-white">Services</h3>
           <ul className="flex flex-col gap-3 mb-4">
             {service.map((ser,idx)=>(
-               <li key={idx}><Link href={`/services/${ser.slug}`} className="text-gray-300 hover:text-white text-sm transition-colors">{ser.title}</Link></li>
+               <li key={idx}><Link href={`/products-services/${ser.slug}`} className="text-gray-300 hover:text-white text-sm transition-colors">{ser.title}</Link></li>
             ))}
           </ul>
         </div>
